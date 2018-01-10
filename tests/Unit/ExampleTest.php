@@ -7,13 +7,16 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class ExampleTest extends TestCase
 {
-    /**
-     * A basic test example.
-     *
-     * @return void
-     */
-    public function testBasicTest()
+    /** @test  */
+    public function it_should_pass()
     {
         $this->assertTrue(true);
     }
+
+    /** @test  */
+    public function it_should_fail()
+    {
+        $this->assertTrue(false);
+    }
+
 }
